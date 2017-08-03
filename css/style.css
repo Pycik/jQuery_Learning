@@ -11,3 +11,8 @@
 	background: green;
 	color: fuchsia;
 }
+.blue {
+	background: blue;
+	color: yellow;
+	border: solid 3px #23dd11;
+}
