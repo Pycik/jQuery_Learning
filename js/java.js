@@ -70,6 +70,7 @@ $("#btn_start").click(function() {
 	.css("background","#111")
 	.css("color","#fff")
 	.css("font-size","20px")
+	.css("border","solid 10px yellow")
 });
 
 $("#btn_reset").click(function() {
@@ -82,4 +83,39 @@ $("#btn_delete").click(function() {
 
 $("#btn_delete_all").click(function() {
 	$("html").hide();
+});
+
+
+//$("#content").css("color","green")
+//$(".wraper").css("color","green")
+//$(".row h1,h2").css("color","green")
+//$("article").find("h2").css("color","green")
+//$("#content").prev().css("color","red")
+//$("#content").next().css("color","red")
+//$("article > h2").css("color","red")
+//$("article > *").css("color","red")
+$("div").find("button").css("color","yellow");
+
+$(".wraper p").css({"color":"grey",
+					"font-size":"20px",
+					"margin-left":"120px",
+					"border":"solid 3px #aae",				
+});
+
+$(".wraper h2").css({color:"#eae",
+					fontSize:"20px",
+					marginLeft:"50px",
+					border:"solid 3px #aef",				
+});
+
+$("img").css({	height:"200px",
+				width:"300px",		
+})
+
+$("img").attr("src","img/bg1.jpg")
+
+$("a#google").attr({ 
+
+"href":"https://www.youtube.com/"	
+
 });
