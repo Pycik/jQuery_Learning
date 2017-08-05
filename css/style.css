@@ -16,3 +16,7 @@
 	color: yellow;
 	border: solid 3px #23dd11;
 }
+
+.text_none {
+	display: none;
+}

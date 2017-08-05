@@ -116,6 +116,70 @@ $("img").attr("src","img/bg1.jpg")
 
 $("a#google").attr({ 
 
-"href":"https://www.youtube.com/"	
+"href":"https://www.youtube.com/",
+"title":"youtube",
 
+});
+
+$("header a").click(function(event){
+	alert("Go to Page")
+	event.preventDefault();
+	event.stopPropagation();
+
+});
+
+$("header").click(function(event){
+	alert("Go to Page ????????")
+	
+});
+
+$("h2 a").click(function(event){
+	alert("Go to Page")
+	return false;
+	
+});
+
+$("#number").keyup(function(){
+	var Value = $(this).val();
+	$("#msg").text("Your Number: " + Value);
+});
+
+$(".anim").click(function(){
+	$(this).hide("slow");
+});
+
+$(".anim2").click(function() {
+	$(this).hide("fast",function(){
+		alert("Hello,your text is close!");
+	});
+});
+
+
+$("#stick").click(function(){
+	$("#stick").css("color","red");
+	$(".text_none").slideDown("slow");
+});
+
+// function changeClass() {
+// 	$(this).prev().toggleClass("active")
+// }
+// 	$(function(){
+// 		$("article h2").click(function(){
+// 			$(this).next().slideToggle();
+// 			$(this).toggleClass("active");
+		
+// 	});
+// });
+
+
+// 	$(function() {
+// 		$("article h2").click(function(){
+// 			$(this).next().slideToggle();		
+// 	});
+// });
+
+
+	
+$("article h2").click(function(){
+	$(this).next().slideToggle();		
 });
