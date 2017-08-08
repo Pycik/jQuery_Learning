@@ -20,3 +20,30 @@
 .text_none {
 	display: none;
 }
+
+.hider {
+	display: none;
+}
+
+
+.anim_circle {
+	width: 100px;
+	height: 200px;
+}
+
+.circle {
+	margin-top: 50px;
+	height: 100px;
+	width: 100px;
+	background: blue;
+	border-radius: 50%;
+}
+
+.circle span {
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	padding-top: 39px; 
+}
