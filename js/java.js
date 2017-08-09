@@ -252,3 +252,51 @@ $("footer").append("<hr/>");
 $("<p>Last</p>").appendTo("#last_p p");
 $("<p>Last of Last</p>").prependTo("#last_p h2");
 
+$(".first").replaceWith("<h3>Hello</h3>");
+$("<h4>Who want donat's?</h4>").replaceAll(".inner");
+
+$(".inner1").wrap("<div class='newIn'>You are</div>");
+$(".inner2").wrapAll("<div class='newIn'>You are</div>");
+
+$("h1").clone().appendTo(".third");
+$(".free").css({background : "purple",
+				color : "white",
+				fontWeight : "bold",
+				width : "50px",
+				});
+var frees;
+$("#free").click(function(){
+	if(frees) {
+		frees.appendTo("header");
+		frees = null;
+	} else {
+		frees = $(".free").detach();
+	}
+});
+
+$(".fourty").empty();
+
+$(".third").css({marginLeft : "30px",
+				 marginTop : "30px"
+				});
+
+var three = $(".third");
+var offset = three.offset();
+three.html("left = " + offset.left + " top = " + offset.top);
+
+$(".second").offset({top:230,left:700});
+
+function ShowHeight(element,height) {
+	$(".push").text("Height of the " + element + " is " + height);
+}
+$(".getpar").click(function(){
+	ShowHeight("paragraph",$("p").height());
+});
+
+$(".getdoc").click(function(){
+	ShowHeight("document",$(Document).height());
+});
+
+$(".getwin").click(function(){
+	ShowHeight("window",$(Window).height());
+});
